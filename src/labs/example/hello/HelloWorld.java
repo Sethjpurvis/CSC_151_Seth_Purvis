@@ -1,3 +1,10 @@
+/* 
+@author: Seth Purvis
+@date: 0201/28/2026
+@purpose: my first Java program
+*/
+
+
 package labs.example.hello;
 
 public class HelloWorld
