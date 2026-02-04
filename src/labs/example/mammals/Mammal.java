@@ -8,16 +8,20 @@ package labs.example.mammals;
 
 public class Mammal {
 
-    protected String hairColor
-    protected String eyeColor
-    protected String bodyTemp
-    protected String mammalHeight
-    protected String mammalLength
-    protected String mammalWeight
+    protected String hairColor;
+    protected String eyeColor;
+    protected String bodyTemp;
+    protected String mammalHeight;
+    protected String mammalLength;
+    protected String mammalWeight;
+    protected String name;
+    protected String habitat;
 
-    public void mammal(String name){
-
+    public Mammal(String habitat) {
+        this.habitat = habitat;
     }
+
+
 
     public void setName(String name){
         this.name = name;
@@ -49,9 +53,7 @@ public class Mammal {
         System.out.println("The mammal is laying down.");
     }
 
-    public void sit() {
-        System.out.println("The mammal is sitting.");
-    }
+    
 
     public void jump() {
         System.out.println("The mammal is jumping.");
@@ -63,6 +65,20 @@ public class Mammal {
 
     public void bite() {
         System.out.println("The mammal is biting.");
+    }
+
+    public void getMammalDetails(){
+        System.out.println(this.eyeColor);
+    }
+
+    public void sit(){
+        if (this.habitat.equals ("water")){
+            System.out.println("amphibious animals cannot sit...");
+        }    
+    
+        else{
+        System.out.println("sit ubu sit!");
+    }
     }
 
 }
