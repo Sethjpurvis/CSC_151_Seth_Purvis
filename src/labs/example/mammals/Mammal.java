@@ -59,8 +59,9 @@ public class Mammal {
         System.out.println("The mammal is jumping.");
     }
 
-    public void walk() {
-        System.out.println("The mammal is walking.");
+    public int walk(int miles) { 
+        System.out.println("The mammal walks " + miles + " miles."); 
+        return miles; 
     }
 
     public void bite() {
@@ -79,6 +80,23 @@ public class Mammal {
         else{
         System.out.println("sit ubu sit!");
     }
+    }
+
+    public class MammalTest { 
+        public static void main(String[] args) { 
+            double x = 4;  
+            double y = -3; 
+
+            double distance = Math.sqrt(x * x + y * y);
+            System.out.println("Straight-line distance: " + distance);
+
+            double theta = calculateAngleTheta(y, x);
+            System.out.println("Angle theta (degrees): " + theta); 
+        }
+
+        public static double calculateAngleTheta(double y, double x) { 
+            double radians = Math.atan2(y, x); 
+            return Math.toDegrees(radians); 
     }
 
 }
