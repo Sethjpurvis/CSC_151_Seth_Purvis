@@ -22,6 +22,10 @@ public class Physics {
         return distance;
         //return velocity * time;
     }
+    public double getVelocity(double distance, double time)
+    {
+        return distance / time; 
+    }
 
 
 }

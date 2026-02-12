@@ -24,6 +24,7 @@ public class Main {
         Physics physics = new Physics();
 
         distance = physics.getDistance(velocity, time); //same thing as coding distance = velocity * time; 
+        foundvelocity = physics.getVelocity(distance, time);
         
 
     }
