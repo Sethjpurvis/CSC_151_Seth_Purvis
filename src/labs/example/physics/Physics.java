@@ -26,6 +26,11 @@ public class Physics {
     {
         return distance / time; 
     }
+    public double getKineticEnergy(double mass, double velocity)
+    {
+        //double kE = (1/2) * mass * (velocity * velocity); Option without using the math library
+        return (1/2) * mass * Math.pow(velocity, 2);
+    }
 
 
 }
