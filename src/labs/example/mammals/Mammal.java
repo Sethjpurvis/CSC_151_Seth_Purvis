@@ -83,7 +83,7 @@ public class Mammal {
     }
 
     public class MammalTest { 
-        public static void main(String[] args) { 
+        public void main(String[] args) { 
             double x = 4;  
             double y = -3; 
 
@@ -94,9 +94,10 @@ public class Mammal {
             System.out.println("Angle theta (degrees): " + theta); 
         }
 
-        public static double calculateAngleTheta(double y, double x) { 
+        public double calculateAngleTheta(double y, double x) { 
             double radians = Math.atan2(y, x); 
             return Math.toDegrees(radians); 
     }
 
+}
 }
