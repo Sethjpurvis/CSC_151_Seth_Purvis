@@ -14,7 +14,7 @@ public class Main {
         //VARIABLES 
         double foundvelocity; 
         double force; 
-        double distance; 
+        double distance; //in miles
         double momentum; 
         double work; 
         double kinecticEnergy; 
@@ -25,6 +25,13 @@ public class Main {
 
         distance = physics.getDistance(velocity, time); //same thing as coding distance = velocity * time; 
         foundvelocity = physics.getVelocity(distance, time);
+
+        //outputs 
+            //if/else logic to check if distance == earth to sun
+        if (distance < physics.getKnownDistanceToEarth())
+        {
+            physics.logEarthToSunInvalidDistance();
+        }
         
 
     }
