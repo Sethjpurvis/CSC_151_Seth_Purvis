@@ -10,10 +10,8 @@ public class WhileLoop {
         while (counter < 10) {
             counter++;
         }
+        System.out.println("The loop executed " + counter + " times");
+        return;
     }
-
-    System.out.println("The loop executed " + counter + " times");
-    return;
-
 }
 
