@@ -6,9 +6,9 @@ public class WhileLoop {
     }
 
     private static void executeWhileLoop(){
-        int counter = 0;
-        while (counter < 10) {
-            counter++;
+        int counter = 0;            // initiate counter
+        while (counter < 10) {      
+            counter++;              // increment up 1
         }
         System.out.println("The loop executed " + counter + " times");
         return;
